@@ -5,10 +5,24 @@
   --foreground: #171717;
 }
 
+@theme {
+  --color-navbar-color: #11170B;
+  --color-dark-background:#151C0D;
+  --color-background: #283618;
+  --color-dark-olive: #1E2912;
+  --color-olive: #445128;
+  --color-light-olive: #606C38;
+  --color-gray-olive: #7A825A;
+  --color-accents: #CD8742;
+  --color-light-accents: #DDA15E;
+  --color-light-text: #FEFAE0;
+
+  --color-background: var(--background)
+  --color-foreground: var(--foreground)
+}
+
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-geist-mono); 
   --font-mono: var(--font-geist-mono);
 }
 
@@ -19,8 +33,3 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
