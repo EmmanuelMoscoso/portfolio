@@ -1,6 +1,16 @@
 export default function Projects() {
 
-  const projectList = [
+  type Project = {
+    title: string;
+    description: string;
+    tech: string[];
+    links: {
+      github: string;
+      external?: string;
+    };
+  };
+
+  const projectList: Project[] = [
     {
       title: "Orvia",
       description: "Aplicación móvil y plataforma para la gestión eficiente de citas médicas. Mi parte del desarrollo se centró en la implementación del frontend y la integración de APIs para optimizar la coordinación entre pacientes y profesionales de la salud.",

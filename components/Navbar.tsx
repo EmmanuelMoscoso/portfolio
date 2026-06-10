@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
+import { MouseEvent } from "react";
 
 export default function Navbar() {
   
-  const handleScroll = (e, targetId) => {
+  const handleScroll = (
+      e: React.MouseEvent<HTMLAnchorElement>,
+      targetId: string
+  ) => {
     e.preventDefault(); 
     
     const targetElement = document.getElementById(targetId);
