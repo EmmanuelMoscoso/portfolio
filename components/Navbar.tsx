@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <header className="w-full flex justify-center py-6 fixed top-0 bg-navbar-color backdrop-blur-sm z-50">
-      <nav className="w-[65%] flex justify-between items-center font-mono text-sm">
+      <nav className="w-[100%] flex justify-between items-center font-mono text-sm">
         <a 
           href="#home" 
           onClick={(e) => handleScroll(e, 'home')}

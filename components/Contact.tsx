@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-[70vh] flex flex-col items-center justify-center max-w-2xl mx-auto px-6 text-center mb-24">
+    <section id="contact" className="min-h-[70vh] flex flex-col items-center justify-center w-full max-w-2xl mx-auto px-6 text-center mb-24">
       
       <p className="font-mono text-accents text-sm md:text-base mb-4 tracking-widest">
         03. ¿Qué sigue?
@@ -10,11 +10,11 @@ export default function Contact() {
         Ponte en contacto
       </h2>
       
-      <p className="text-slate-400 text-lg leading-relaxed mb-12">
+      <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-10 md:mb-12 w-full">
         Actualmente estoy en búsqueda de una oportunidad para realizar mis prácticas profesionales. Si tienes un espacio en tu equipo de desarrollo o simplemente quieres conectar, mi bandeja de entrada siempre está abierta.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center gap-4">
+      <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
         
         <a
           href="mailto:emmanuel.moscoso.a@gmail.com"

@@ -38,23 +38,24 @@ export default function Projects() {
 ];
 
   return (
-    <section id="projects" className="min-h-screen pt-32 max-w-6xl mx-auto px-6 mb-32">
+    <section id="projects" className="min-h-screen pt-24 md:pt-32 w-full max-w-6xl mx-auto px-6 mb-24 md:mb-32">
       
-      <h3 className="text-3xl md:text-4xl font-bold text-slate-200 mb-12 flex items-center gap-4 tracking-tight">
-        <span className="text-accents font-mono text-xl font-normal">02.</span> 
+      <h3 className="text-2xl md:text-4xl font-bold text-slate-200 mb-8 md:mb-12 flex items-center tracking-tight w-full">
+        <span className="text-accents font-mono text-lg md:text-xl font-normal mr-3 md:mr-4">02.</span> 
         Proyectos destacados
-        <div className="h-[1px] bg-gray-olive w-48 md:w-96 ml-4"></div>
+        <div className="h-[1px] bg-gray-olive flex-grow ml-4 md:ml-6"></div>
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full">
         {projectList.map((project, index) => (
           <div 
             key={index} 
-            className="bg-olive p-8 rounded-md border hover:border-gray-olive hover:border-2 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+            className="bg-olive p-6 md:p-8 rounded-md border hover:border-gray-olive hover:border-2 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group w-full"
           >
             <div>
-              <div className="flex justify-between items-center mb-8">
+              <div className="flex justify-between items-center mb-6 md:mb-8">
                 <div className="text-light-accents">
+                  {/* Icon or visual element can go here */}
                 </div>
                 <div className="flex items-center gap-4 text-gray-olive">
                   {project.links.github && (
@@ -70,7 +71,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <h4 className="text-2xl font-bold text-light-accents mb-3 group-hover:text-light-text transition-colors">
+              <h4 className="text-xl md:text-2xl font-bold text-light-accents mb-3 group-hover:text-light-text transition-colors">
                 {project.title}
               </h4>
               <p className="text-gray-200 text-sm md:text-base leading-relaxed text-justify">
@@ -78,7 +79,7 @@ export default function Projects() {
               </p>
             </div>
 
-            <ul className="flex flex-wrap gap-3 mt-8 font-mono text-xs text-gray-olive group-hover:text-olive-300">
+            <ul className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8 font-mono text-[11px] md:text-xs text-gray-olive group-hover:text-olive-300">
               {project.tech.map((techItem, i) => (
                 <li key={i}>{techItem}</li>
               ))}

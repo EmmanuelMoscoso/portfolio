@@ -1,14 +1,14 @@
 export default function About() {
   return (
-    <section id="about" className="min-h-screen pt-32 max-w-5xl mx-auto px-6 flex flex-col justify-center">
+    <section id="about" className="min-h-screen pt-24 md:pt-32 w-full max-w-5xl mx-auto px-6 flex flex-col justify-center">
       
-      <h3 className="text-3xl md:text-4xl font-bold text-light-text mb-12 flex items-center gap-4 tracking-tight">
-        <span className="text-accents font-mono text-xl font-normal">01.</span> 
+      <h3 className="text-2xl md:text-4xl font-bold text-light-text mb-8 md:mb-12 flex items-center tracking-tight w-full">
+        <span className="text-accents font-mono text-lg md:text-xl font-normal mr-3 md:mr-4">01.</span> 
         Sobre mí
-        <div className="h-[1px] bg-gray-olive w-48 md:w-4/6 ml-4"></div>
+        <div className="h-[1px] bg-gray-olive flex-grow ml-4 md:ml-6"></div>
       </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-12 text-gray-200 text-lg leading-relaxed ">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-12 text-gray-200 text-base md:text-lg leading-relaxed w-full">
         
        <div className="md:col-span-3 space-y-6 text-justify">
         <p>
@@ -22,75 +22,45 @@ export default function About() {
         </p>
       </div>
 
-        <div className="md:col-span-2 space-y-10">
+        <div className="md:col-span-2 space-y-8 md:space-y-10 w-full">
           
-          <div>
+          <div className="w-full">
             <h4 className="text-light-text font-bold mb-4 font-mono text-sm tracking-widest uppercase">
               Tecnologías
             </h4>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-3 font-mono text-sm text-gray-200">
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Next.js
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Python
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> React Native
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> TypeScript
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> AWS
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Java
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> AWS
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> SQL
-              </li>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-3 font-mono text-xs md:text-sm text-gray-200">
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Next.js</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Python</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> React Native</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> TypeScript</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> AWS</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Java</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> SQL</li>
             </ul>
           </div>
 
-          <div>
+          <div className="w-full">
             <h4 className="text-light-text font-bold mb-4 font-mono text-sm tracking-widest uppercase">
               Habilidades
             </h4>
-            <ul className="grid grid-cols-2 gap-x-4 gap-y-3 font-mono text-sm text-gray-200">
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Metodologías Ágiles - SCRUM
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Automatización de procesos
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Edición de imágenes
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Edición de video
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Diseño gráfico
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-accents">▹</span> Mantenimiento de hardware
-              </li>
-              
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-3 font-mono text-xs md:text-sm text-gray-200">
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Metodologías Ágiles</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Automatización</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Edición de imágenes</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Edición de video</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Diseño gráfico</li>
+              <li className="flex items-center gap-2"><span className="text-accents">▹</span> Mantenimiento hardware</li>
             </ul>
           </div>
 
-          <div>
+          <div className="w-full">
             <h4 className="text-light-text font-bold mb-4 font-mono text-sm tracking-widest uppercase">
               Idiomas
             </h4>
-            <ul className="space-y-3 text-sm text-gray-200 font-mono">
+            <ul className="space-y-3 text-xs md:text-sm text-gray-200 font-mono">
               <li className="flex justify-between border-b border-slate-700/50 pb-1">
                 <span>Español</span>
-                <span className="text-gray-400  ">Nativo</span>
+                <span className="text-gray-400">Nativo</span>
               </li>
               <li className="flex justify-between border-b border-slate-700/50 pb-1">
                 <span>Inglés</span>
