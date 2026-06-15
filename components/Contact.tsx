@@ -13,15 +13,16 @@ export default function Contact() {
       <p className="text-slate-400 text-base md:text-lg leading-relaxed mb-10 md:mb-12 w-full">
         Actualmente estoy en búsqueda de una oportunidad para realizar mis prácticas profesionales. Si tienes un espacio en tu equipo de desarrollo o simplemente quieres conectar, mi bandeja de entrada siempre está abierta.
       </p>
-
+      {/*}     
       <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
         
         <a
-          href="mailto:emmanuel.moscoso.a@gmail.com"
+          href="mailto:////"
           className="px-8 py-4 border border-accents text-accents font-mono text-sm rounded hover:bg-olive transition-colors w-full sm:w-auto"
         >
           Envíame un correo
         </a>
+        */}
 
         <a
           href="https://www.linkedin.com/in/emmanuel-moscoso/"

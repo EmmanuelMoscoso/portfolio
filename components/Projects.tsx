@@ -55,7 +55,6 @@ export default function Projects() {
             <div>
               <div className="flex justify-between items-center mb-6 md:mb-8">
                 <div className="text-light-accents">
-                  {/* Icon or visual element can go here */}
                 </div>
                 <div className="flex items-center gap-4 text-gray-olive">
                   {project.links.github && (
